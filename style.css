@@ -1,0 +1,84 @@
+body {
+    font-family: 'Vazir', sans-serif;
+    background: linear-gradient(135deg, #4a6bdf 0%, #6c5ca7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    direction: rtl;
+}
+
+.calendar {
+    background: linear-gradient(155deg, #f5f7fa 0%, #d7b2b1 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 350px;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 100px auto;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.nav-btn {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #357ab8;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+    width: 14.28%;
+    text-align: center;
+    padding: 0.6rem 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.calendar-table th {
+    background: #e9edf5;
+    color: #333;
+    font-weight: 600;
+}
+
+.calendar-table td {
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s, color 0.2s;
+}
+
+.calendar-table td:hover {
+    background: #d0e7ff;
+    color: #000;
+}
+
+.calendar-table .today {
+    background: #4a90e2;
+    color: #fff;
+}
